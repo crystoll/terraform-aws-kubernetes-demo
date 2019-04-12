@@ -1,0 +1,25 @@
+
+# This folder contains terraform temp files
+terraform/.terraform
+
+# This file is Solita sandbox specific, used to handle login session to solita-sandbox profile
+aws-saml-auth.py
+
+# Terraform plan files are temporary, should not be in git
+*.plan
+
+# State and its backups are not needed in git
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# IntelliJ Idea project files
+*.iml
+.idea
+
+# Config map is not checked in git
+config-map-aws-auth.yaml
+
+# Terraform user-specific var overrides
+terraform/*.auto.tfvars
+
